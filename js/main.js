@@ -43,7 +43,7 @@ const clearSuggestions = () => {
 const generateNames = () => {
     const randomClassArr = [];
     for (let i = 0; i < 2;) {
-        const randomNumber = Math.floor(Math.random() * 10);
+        const randomNumber = Math.floor(Math.random() * classList.length);
         if (randomClassArr.includes(randomNumber)) continue;
         randomClassArr.push(randomNumber);
         i++;
@@ -52,7 +52,7 @@ const generateNames = () => {
 
     const randomLeftWeaponArr = [];
     for (let i = 0; i < 4;) {
-        const randomNumber = Math.floor(Math.random() * 21);
+        const randomNumber = Math.floor(Math.random() * weaponsList.length);
         if (randomLeftWeaponArr.includes(randomNumber)) continue;
         randomLeftWeaponArr.push(randomNumber);
         i++;
@@ -63,7 +63,7 @@ const generateNames = () => {
 
     const randomRightWeaponArr = [];
     for (let i = 0; i < 4;) {
-        const randomNumber = Math.floor(Math.random() * 21);
+        const randomNumber = Math.floor(Math.random() * weaponsList.length);
         if (randomRightWeaponArr.includes(randomNumber)) continue;
         randomRightWeaponArr.push(randomNumber);
         i++;
@@ -74,7 +74,7 @@ const generateNames = () => {
 
     const randomPassive = [];
     for (let i = 0; i < 5;) {
-        const randomNumber = Math.floor(Math.random() * 23);
+        const randomNumber = Math.floor(Math.random() * passiveList.length);
         if (randomPassive.includes(randomNumber)) continue;
         randomPassive.push(randomNumber);
         i++;
