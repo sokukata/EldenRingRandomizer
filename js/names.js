@@ -41,7 +41,7 @@ export const weaponsList = [
     "Crossbows",
     "Ballistae",
     "Glintstone Staffs",
-    "Sacred Seals"
+    "Sacred Seals",
     "Torches"
 ]
 
